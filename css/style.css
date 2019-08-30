@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 html {
     box-sizing: border-box;
     font-size: 16;
@@ -40,4 +44,46 @@ html {
     padding: 025rem 0;
     margin: 0 1.80rem;
     text-transform: uppercase;
+}
+
+.nav ul li.logo .black {
+    display: none;
+}
+
+.nav ul li.logo a {
+    margin: 0 4rem;
+}
+
+.nav-icon {
+    position: absolute;
+    top: 20px;
+    right: 30;
+    padding: 5%;
+    width: 40;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.nav-icon span {
+    background: #333;
+    width: 30px;
+    height: 1px;
+    display: block;
+    transition: 300ms linear all;
+}
+
+.nav-icon span:nth-child(1),
+.nav-icon span:nth-child(3) {
+    width: 20px;
+    margin: 0 auto;
+}
+
+.nav-icon span:nth-child(2) {
+    margin: 5px 0;
+    width: 32px;
+}
+
+.nav-icon:hover span:nth-child(1),
+.nav-icon:hover span:nth-child(3) {
+    width: 30px;
 }
